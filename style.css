@@ -141,7 +141,7 @@ body {
     display: inline-block;
     cursor: pointer;
     padding: 10px 20px;
-    margin: 10px auto;
+    margin: 10px 110px;
     border-radius: 50px;
     width: 300px;
     color: white;
@@ -153,6 +153,10 @@ body {
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
     transform: translateY(-1px);
     color: var(--8);
+}
+.contets a {
+    padding: 0 50px;
+    justify-content: center;
 }
 
 /* FITUR */
