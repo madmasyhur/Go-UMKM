@@ -144,8 +144,6 @@ body {
     margin: 10px auto;
     border-radius: 50px;
     width: 300px;
-}
-.contents button a {
     color: white;
     font-size: 18px;
 }
@@ -154,8 +152,6 @@ body {
     transition: all 0.4s ease-in-out;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
     transform: translateY(-1px);
-}
-.contents button a:hover {
     color: var(--8);
 }
 
@@ -316,175 +312,26 @@ body {
 .sec p {
     color: #747b88;
     font-size: 16px;
+    margin: 5px 0px 5px 0px;
 }
 .sec img {
     height: 32px;
     width: 32px;
-    margin-right: 10px;
+} 
+
+.flex {
+    display: flex;
+    margin: 5px 0px 5px 0px;
 }
+
+.flex p {
+    margin-left: 10px;
+    align-items: center;
+}
+
 #footer {
     display: flex;
     background-color: var(--7);
     justify-content: space-around;
     align-items: center;
-}
-
-/* RESPONSIVE */
-
-@media screen and (max-width: 900px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        list-style: none;
-    }
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 80px;
-        background-color: var(--1);
-    }
-    .navbar-brand {
-        height: 30px;
-        
-    }
-    .nav-link {
-        display: none;
-    }
-    .nav-link li {
-        display: block;
-        margin: 10px 0;
-    }
-    .nav-link li a {
-        color: var(--font);
-        font-size: 18px;
-    }
-    .nav-link li a:hover {
-        color: var(--font);
-    }
-    .nav-link li a.active {
-        color: var(--font);
-    }
-    .nav-link li a.active:hover {
-        color: var(--font);
-    }
-    .nav-link li a.active::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-color: var(--font);
-        margin-top: 5px;
-    }
-    .nav-link li a.active:hover::after {
-        background-color: var(--font);
-    }
-    header .box1 p {
-        text-align: justify;
-        width: 75%;
-    }
-    .fitur {
-        display: inline-block;
-    }
-    .fitur h1 {
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    .fitur p {
-        padding: auto 20px;
-    }
-    .cardf-desc h4 {
-        font-size: 20px;
-    }
-    .cardf-desc p {
-        font-size: 16px;
-    }
-    .box4 h1 {
-        font-size: 30px;
-    }
-    .box4 p {
-        font-size: 16px;
-        width: 100%;
-        margin: auto;
-    }
-    .content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
-        margin-top: 3rem;
-        margin-left: 50px;
-    }
-    .content .blogs {
-        position: relative;
-        background-color: var(--color-grey-5);
-        border-radius: 5px;
-        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
-        transition: all 0.4s ease-in-out;
-    }
-    .content .blogs:hover {
-        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
-        transform: translateY(-5px);
-        transition: all 0.4s ease-in-out;
-    }
-    .content .blogs img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        filter: grayscale(100%);
-        transition: all 0.4s ease-in-out;
-    }
-    .content .blogs:hover img {
-        filter: grayscale(0);
-        transform: scale(1.1);
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
-    }
-    .content .blogs .text {
-        margin-top: -7px;
-        padding: 1.1rem;
-        border-top: 8px solid var(--dark);
-    }
-    .content .blogs .text h3 {
-        font-size: 24px;
-        margin-bottom: 0.7rem;
-        transition: all 0.4s ease-in-out;
-        cursor: pointer;
-    }
-    .content .blogs .text h3:hover {
-        color: var(--font);
-    }
-    .prefooter {
-        display: flex;
-        padding: 50px 80px;
-        gap: 76px;
-        background-color: var(--1);
-    }
-    .foot-desc {
-        display: flex;
-        flex-direction: row;
-        gap: 200px;
-    }
-    .sec h3 {
-        color: var(--9);
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-    .sec p {
-        color: #747b88;
-        font-size: 16px;
-    }
-    .sec img {
-        height: 32px;
-        width: 32px;
-        margin-right: 10px;
-    }
-    #footer {
-        display: flex;
-        background-color: var(--7);
-        justify-content: space-around;
-        align-items: center;
-    }
 }
